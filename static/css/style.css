@@ -3,6 +3,7 @@
     --color-secondary: #ffa300 ;
     --color-text: #707789 ;
     --color-bg: #dedede ;
+    --font-title: fresh;
 }
 
 
@@ -37,6 +38,52 @@ nav ul li {
 }
 
 nav ul li a {
+    font-size: 30px;
+    font-weight: 700;
     text-decoration: none;
-    color:var(--color-text)
+    font-family: fresh;
+    color: var(--color-text)
+}
+
+nav ul li a:hover {
+    color: white
+}
+
+main {
+    background-color: var(--color-bg);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.about {
+
+    display: flex;
+    padding: 25px;
+}
+
+.about-content {
+
+    width: 350px;
+    padding: 25px;
+}
+footer {
+    
+    width: 100vw;
+    min-height: 150px;
+    background-color: var(--color-text);
+}
+
+footer img {
+    margin: 25px;
+    
+}
+
+@font-face {
+    font-family: fresh;
+    src: url('../fonts/Green\ Smile.ttf');
 }
